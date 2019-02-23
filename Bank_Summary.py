@@ -131,8 +131,8 @@ try:
             self.lblWFSave = tk.Label(self, text="Wells Fargo Saving")
             self.entWFSave = tk.Entry(self)
 
-            self.lblCHCheck = tk.Label(self, text="Chase Checking")
-            self.entCHCheck = tk.Entry(self)
+            # self.lblCHCheck = tk.Label(self, text="Chase Checking")
+            # self.entCHCheck = tk.Entry(self)
 
             self.lblFBCheck = tk.Label(self, text="First Bank Checking")
             self.entFBCheck = tk.Entry(self)
@@ -140,11 +140,11 @@ try:
             self.lblFBSave = tk.Label(self, text="First Bank Saving")
             self.entFBSave = tk.Entry(self)
 
-            self.lblELCheck = tk.Label(self, text="Elevation Checking")
-            self.entELCheck = tk.Entry(self)
-
-            self.lblELSave = tk.Label(self, text="Elevation Saving")
-            self.entELSave = tk.Entry(self)
+            # self.lblELCheck = tk.Label(self, text="Elevation Checking")
+            # self.entELCheck = tk.Entry(self)
+            #
+            # self.lblELSave = tk.Label(self, text="Elevation Saving")
+            # self.entELSave = tk.Entry(self)
 
             self.lblCash = tk.Label(self, text="Cash")
             self.entCash = tk.Entry(self)
@@ -175,40 +175,40 @@ try:
             self.lblWFSave.grid(row=3, column=1, padx=10, pady=10)
             self.entWFSave.grid(row=3, column=2, padx=10, pady=10)
 
-            self.lblCHCheck.grid(row=4, column=1, padx=10, pady=10)
-            self.entCHCheck.grid(row=4, column=2, padx=10, pady=10)
+            # self.lblCHCheck.grid(row=4, column=1, padx=10, pady=10)
+            # self.entCHCheck.grid(row=4, column=2, padx=10, pady=10)
 
-            self.lblFBCheck.grid(row=5, column=1, padx=10, pady=10)
-            self.entFBCheck.grid(row=5, column=2, padx=10, pady=10)
+            self.lblFBCheck.grid(row=4, column=1, padx=10, pady=10)
+            self.entFBCheck.grid(row=4, column=2, padx=10, pady=10)
 
-            self.lblFBSave.grid(row=6, column=1, padx=10, pady=10)
-            self.entFBSave.grid(row=6, column=2, padx=10, pady=10)
+            self.lblFBSave.grid(row=5, column=1, padx=10, pady=10)
+            self.entFBSave.grid(row=5, column=2, padx=10, pady=10)
 
-            self.lblELCheck.grid(row=7, column=1, padx=10, pady=10)
-            self.entELCheck.grid(row=7, column=2, padx=10, pady=10)
+            # self.lblELCheck.grid(row=7, column=1, padx=10, pady=10)
+            # self.entELCheck.grid(row=7, column=2, padx=10, pady=10)
 
-            self.lblELSave.grid(row=8, column=1, padx=10, pady=10)
-            self.entELSave.grid(row=8, column=2, padx=10, pady=10)
+            # self.lblELSave.grid(row=8, column=1, padx=10, pady=10)
+            # self.entELSave.grid(row=8, column=2, padx=10, pady=10)
 
-            self.lblCash.grid(row=9, column=1, padx=10, pady=10)
-            self.entCash.grid(row=9, column=2, padx=10, pady=10)
+            self.lblCash.grid(row=6, column=1, padx=10, pady=10)
+            self.entCash.grid(row=6, column=2, padx=10, pady=10)
 
-            self.lblBankTotal.grid(row=10, column=1, padx=10, pady=10)
-            self.lblBankTotalValue.grid(row=10, column=2, padx=10, pady=10)
+            self.lblBankTotal.grid(row=7, column=1, padx=10, pady=10)
+            self.lblBankTotalValue.grid(row=7, column=2, padx=10, pady=10)
 
-            self.lblDiscover.grid(row=11, column=1, padx=10, pady=10)
-            self.entDiscover.grid(row=11, column=2, padx=10, pady=10)
+            self.lblDiscover.grid(row=8, column=1, padx=10, pady=10)
+            self.entDiscover.grid(row=8, column=2, padx=10, pady=10)
 
-            self.lblAmex.grid(row=12, column=1, padx=10, pady=10)
-            self.entAmex.grid(row=12, column=2, padx=10, pady=10)
+            self.lblAmex.grid(row=9, column=1, padx=10, pady=10)
+            self.entAmex.grid(row=9, column=2, padx=10, pady=10)
 
-            self.lblFinal.grid(row=13, column=1, padx=10, pady=10)
-            self.lblFinalValue.grid(row=13, column=2, padx=10, pady=10)
+            self.lblFinal.grid(row=10, column=1, padx=10, pady=10)
+            self.lblFinalValue.grid(row=10, column=2, padx=10, pady=10)
 
-            self.btnTotal.grid(row=14, column=1, padx=10, pady=10)
-            self.btnClose.grid(row=14, column=2, padx=10, pady=10)
+            self.btnTotal.grid(row=11, column=1, padx=10, pady=10)
+            self.btnClose.grid(row=11, column=2, padx=10, pady=10)
 
-            self.lblText.grid(row=15, column=1, columnspan=2, padx=10, pady=10)
+            self.lblText.grid(row=12, column=1, columnspan=2, padx=10, pady=10)
             self.lblText.configure(font=("Times New Roman", 10, "bold"))
 
         # For Final total
@@ -232,11 +232,11 @@ try:
             else:
                 self.entWFSave.insert(0, "0")
                 valWFSave = 0
-            if self.entCHCheck.get() != "":
-                valCHCheck = round(float(self.entCHCheck.get()), 2)
-            else:
-                self.entCHCheck.insert(0, "0")
-                valCHCheck = 0
+            # if self.entCHCheck.get() != "":
+            #     valCHCheck = round(float(self.entCHCheck.get()), 2)
+            # else:
+            #     self.entCHCheck.insert(0, "0")
+            #     valCHCheck = 0
             if self.entFBCheck.get() != "":
                 valFBCheck = round(float(self.entFBCheck.get()), 2)
             else:
@@ -247,16 +247,16 @@ try:
             else:
                 self.entFBSave.insert(0, "0")
                 valFBSave = 0
-            if self.entELCheck.get() != "":
-                valELCheck = round(float(self.entELCheck.get()), 2)
-            else:
-                self.entELCheck.insert(0, "0")
-                valELCheck = 0
-            if self.entELSave.get() != "":
-                valELSave = round(float(self.entELSave.get()), 2)
-            else:
-                self.entELSave.insert(0, "0")
-                valELSave = 0
+            # if self.entELCheck.get() != "":
+            #     valELCheck = round(float(self.entELCheck.get()), 2)
+            # else:
+            #     self.entELCheck.insert(0, "0")
+            #     valELCheck = 0
+            # if self.entELSave.get() != "":
+            #     valELSave = round(float(self.entELSave.get()), 2)
+            # else:
+            #     self.entELSave.insert(0, "0")
+            #     valELSave = 0
             if self.entCash.get() != "":
                 valCash = round(float(self.entCash.get()), 2)
             else:
@@ -274,7 +274,8 @@ try:
                 self.entAmex.insert(0, "0")
                 valAmex = 0
 
-            banktotal = valWFCheck + valWFSave + valCHCheck + valFBCheck + valFBSave + valELCheck + valELSave + valCash
+            # banktotal = valWFCheck + valWFSave + valCHCheck + valFBCheck + valFBSave + valELCheck + valELSave + valCash
+            banktotal = valWFCheck + valWFSave + valFBCheck + valFBSave + valCash
             self.lblBankTotalValue['text'] = str(round(banktotal, 2))
 
             finalamount = banktotal - valDiscover - valAmex
@@ -296,11 +297,11 @@ try:
             file.write('|==================================\n')
             file.write('|Wells Fargo Checking:---' + str(valWFCheck) + '\n')
             file.write('|Wells Fargo Saving:-----' + str(valWFSave) + '\n')
-            file.write('|Chase Checking:---------' + str(valCHCheck) + '\n')
+            # file.write('|Chase Checking:---------' + str(valCHCheck) + '\n')
             file.write('|First Bank Checking:----' + str(valFBCheck) + '\n')
             file.write('|First Bank Saving:------' + str(valFBSave) + '\n')
-            file.write('|Elevation Checking:-----' + str(valELCheck) + '\n')
-            file.write('|Elevation Saving:-------' + str(valELSave) + '\n')
+            # file.write('|Elevation Checking:-----' + str(valELCheck) + '\n')
+            # file.write('|Elevation Saving:-------' + str(valELSave) + '\n')
             file.write('|==================================\n')
             file.write('|Cash:-------------------' + str(valCash) + '\n')
             file.write('|==================================\n')

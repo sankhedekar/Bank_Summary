@@ -1,9 +1,10 @@
-# author	:	Sanket Khedekar sakh3719@colorado.edu
-# name	    :	Bank Summary.py
-# purpose	:   Program to generate Bank details Summary
-# date	    :	2018.06.23
-# sudo pip install --upgrade google-api-python-client
-# sudo pip install oauth2client
+# author    :   Sanket Khedekar sakh3719@colorado.edu
+# name      :   Bank Summary.py
+# purpose   :   Program to generate Bank details Summary
+# date      :   2018.06.23
+# Run the following command on Pycharm terminal
+# pip install --upgrade google-api-python-client
+# pip install oauth2client
 
 from __future__ import print_function
 
@@ -162,7 +163,7 @@ try:
             self.lblFinalValue = tk.Label(self, text="")
 
             self.btnTotal = tk.Button(self, text="Total", command=self.total, width=10)
-            self.btnClose = tk.Button(self, text="Close", command=lambda: controller.show_frame(StartPage), width=10)
+            self.btnClose = tk.Button(self, text="Close", command=lambda: [self.clear(), controller.show_frame(StartPage)], width=10)
 
             self.lblText = tk.Label(self, text="")
 
@@ -219,6 +220,19 @@ try:
             service = self.setup_drive()
             folder_id = self.folder(service)
             self.upload(service, file_name, file_path, folder_id)
+
+        # For Clearing all text:
+        def clear(self):
+            self.entWFCheck.delete(0, 'end')
+            self.entWFSave.delete(0, 'end')
+            self.entFBCheck.delete(0, 'end')
+            self.entFBSave.delete(0, 'end')
+            self.entCash.delete(0, 'end')
+            self.lblBankTotalValue['text'] = ""
+            self.entDiscover.delete(0, 'end')
+            self.entAmex.delete(0, 'end')
+            self.lblFinalValue['text'] = ""
+            self.lblText['text'] = ""
 
         # Final write
         def file_write(self):
